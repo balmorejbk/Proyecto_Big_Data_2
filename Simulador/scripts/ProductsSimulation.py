@@ -9,7 +9,7 @@ Created on Tue Dic 1 22:15:05 2021
 import datetime
 import time
 import random
-from pip._vendor import requests
+import requests
 
 class ProductsSimulation:
     def sendData(iotagenturl,iotagentkey):
