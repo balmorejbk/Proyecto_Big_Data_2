@@ -39,8 +39,6 @@ services:
         - "5452:5432"
     networks:
         - default
-    volumes:
-      - pg-data:/var/lib/postgresql/data
     environment:
         - "POSTGRES_PASSWORD=1dm3n3str1d4r"
         - "POSTGRES_USER=postgres"
@@ -112,5 +110,3 @@ services:
         - "MB_DB_PASS=1dm3n3str1d4r"
        # - "MB_DB_PASS=1dm3n3str1d4r"
         - "MB_DB_HOST=postgres-db"
-volumes:
-  pg-data:
