@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "cf51cc01-ac4d-4725-a753-093a0d62f045",
+		"name": "DeteccionAnomalias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"H\": \"0.2\",\r\n    \"V\": \"0.2\",\r\n    \"C\": \"1222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/anomalydetection/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anomalydetection",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
